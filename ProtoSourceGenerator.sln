@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Proto.Cluster.CodeGeneration", "Proto.Cluster.CodeGeneration\Proto.Cluster.CodeGeneration.csproj", "{1557EEC1-9BFA-4346-A4E7-491141FF334F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Messages", "Messages\Messages.csproj", "{7216D9E4-B175-4317-845E-3E68AF48F136}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1557EEC1-9BFA-4346-A4E7-491141FF334F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1557EEC1-9BFA-4346-A4E7-491141FF334F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1557EEC1-9BFA-4346-A4E7-491141FF334F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1557EEC1-9BFA-4346-A4E7-491141FF334F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7216D9E4-B175-4317-845E-3E68AF48F136}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7216D9E4-B175-4317-845E-3E68AF48F136}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7216D9E4-B175-4317-845E-3E68AF48F136}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7216D9E4-B175-4317-845E-3E68AF48F136}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
