@@ -37,7 +37,7 @@ namespace GeneratedNamespace
             foreach (var file in myFiles)
             {
 
-                var content = file.GetText(context.CancellationToken).ToString();
+                var content = file!.GetText(context.CancellationToken)!.ToString();
 
                 var csCodeString = GenerateCsCodeForProtoFile(content);
 
