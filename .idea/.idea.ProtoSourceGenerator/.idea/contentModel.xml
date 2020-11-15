@@ -24,7 +24,7 @@
         <e p="logo.png" t="Include" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
-            <e p="net5.0" t="Include">
+            <e p="netstandard2.0" t="Include">
               <e p="Proto.Cluster.CodeGeneration.AssemblyInfo.cs" t="Include" />
             </e>
           </e>

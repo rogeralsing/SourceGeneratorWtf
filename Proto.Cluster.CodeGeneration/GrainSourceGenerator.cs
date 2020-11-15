@@ -95,10 +95,10 @@ namespace GeneratedNamespace
             var output = result;
             return output;
             
-            static string RemovePackageName(ReadOnlySpan<char> type)
+            static string RemovePackageName(string type)
             {
                 var index = type.LastIndexOf('.');
-                return type.Slice(index + 1).ToString();
+                return type.Substring(index + 1).ToString();
             }
         }
         
