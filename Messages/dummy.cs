@@ -7,7 +7,7 @@ namespace Messages
         public void Stuff()
         {
             GeneratedClass.GeneratedMethod();
-            
+            var x = typeof(Messages.Grains);
         }
     }
 }

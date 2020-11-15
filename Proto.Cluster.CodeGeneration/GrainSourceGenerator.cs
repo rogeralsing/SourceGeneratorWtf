@@ -32,23 +32,18 @@ namespace GeneratedNamespace
 }", Encoding.UTF8));
             
             // find anything that matches our files
-            var myFiles = context.AdditionalFiles.Where(at => at.Path.EndsWith(".proto"));
+            var myFiles = context.AdditionalFiles.Where(at => at.Path.EndsWith(".proto")).ToArray();
+
             foreach (var file in myFiles)
             {
-                try
-                {
-                    var content = file.GetText(context.CancellationToken).ToString();
 
-                    var csCodeString = GenerateCsCodeForProtoFile(content);
+                var content = file.GetText(context.CancellationToken).ToString();
 
-                    var sourceText = SourceText.From(csCodeString, Encoding.UTF8);
+                var csCodeString = GenerateCsCodeForProtoFile(content);
 
-                    context.AddSource($"{file.Path}generated.cs", sourceText);
-                }
-                catch(Exception)
-                {
-                 //   context.ReportDiagnostic(Diagnostic.Create(error, Location.None, file.Path));
-                }
+                var sourceText = SourceText.From(csCodeString, Encoding.UTF8);
+
+                context.AddSource($"generated.cs", sourceText);
             }
         }
 
