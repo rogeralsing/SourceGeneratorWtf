@@ -20,6 +20,7 @@ namespace Proto.Cluster.CodeGeneration
         {
             //just to se if it runs at all.....
             context.AddSource("myGeneratedFile.cs", SourceText.From(@"
+//this is just here to see that anything at all is generated...
 namespace GeneratedNamespace
 {
     public class GeneratedClass
